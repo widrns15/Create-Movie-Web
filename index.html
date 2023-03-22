@@ -10,7 +10,7 @@
   <script type="text/babel">
     const root = document.getElementById("root");
 
-    const App = () => {
+    const MinutesToHours = () => {
       const [amount, setAmount] = React.useState(0);
       const [inverted, setInverted] = React.useState(false);
 
@@ -24,7 +24,6 @@
       };
       return (
         <div>
-          <h1>Super Converter</h1>
           <div>
             <label htmlFor="minutes">Minutes</label>
             <input
@@ -52,6 +51,15 @@
           <button onClick={onInvert}>
             {inverted ? "Turn back" : "Invert"}
           </button>
+        </div>
+      );
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <h1>Super Converter</h1>
+          <MinutesToHours />
         </div>
       );
     };
