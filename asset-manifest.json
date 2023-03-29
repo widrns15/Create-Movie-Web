@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Create-Movie-Web/static/js/main.c38496bf.js",
+    "main.js": "/Create-Movie-Web/static/js/main.f8061427.js",
     "index.html": "/Create-Movie-Web/index.html",
-    "main.c38496bf.js.map": "/Create-Movie-Web/static/js/main.c38496bf.js.map"
+    "main.f8061427.js.map": "/Create-Movie-Web/static/js/main.f8061427.js.map"
   },
   "entrypoints": [
-    "static/js/main.c38496bf.js"
+    "static/js/main.f8061427.js"
   ]
 }
