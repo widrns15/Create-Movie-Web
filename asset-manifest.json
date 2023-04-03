@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Create-Movie-Web/static/js/main.1fe39bb5.js",
-    "index.html": "/Create-Movie-Web/index.html",
-    "main.1fe39bb5.js.map": "/Create-Movie-Web/static/js/main.1fe39bb5.js.map"
+    "main.js": "/create-movie-web/static/js/main.1fe39bb5.js",
+    "index.html": "/create-movie-web/index.html",
+    "main.1fe39bb5.js.map": "/create-movie-web/static/js/main.1fe39bb5.js.map"
   },
   "entrypoints": [
     "static/js/main.1fe39bb5.js"
