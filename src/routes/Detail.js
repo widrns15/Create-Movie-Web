@@ -21,7 +21,7 @@ function Detail() {
   return (
     <MainSection>
       {loading ? (
-        <h1>Loading...</h1>
+        <span>Loading...</span>
       ) : (
         <div>
           <img src={movie.large_cover_image} alt="poster" />
@@ -38,8 +38,13 @@ function Detail() {
 const MainSection = styled.div`
   position: relative;
   text-align: center;
-  h1 {
-    margin-top: 360px;
+  span {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
   }
 `;
 
