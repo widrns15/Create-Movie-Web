@@ -1,6 +1,8 @@
 import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import Navigation from "../components/Navigation";
+import BackButton from "../components/BackButton";
 
 function Detail() {
   const { id } = useParams();
@@ -21,14 +23,23 @@ function Detail() {
   return (
     <MainSection>
       {loading ? (
-        <span>Loading...</span>
+        <p>Loading...</p>
       ) : (
         <div>
-          <img src={movie.large_cover_image} alt="poster" />
-          <p>
-            🎬 Title: {movie.title}, {movie.year}
-          </p>
-          <p>✅ Download: {movie.download_count}</p>
+          <BackGroundSection>
+            <img src={movie.background_image_original} alt="poster" />
+          </BackGroundSection>
+          <div>
+            <BackButton />
+            <Navigation />
+            <img src={movie.large_cover_image} alt="poster" />
+            <SpanSection>
+              <span>
+                🎬 Title: {movie.title}, {movie.year}
+              </span>
+              <span>✅ Download: {movie.download_count.toLocaleString()}</span>
+            </SpanSection>
+          </div>
         </div>
       )}
     </MainSection>
@@ -38,13 +49,42 @@ function Detail() {
 const MainSection = styled.div`
   position: relative;
   text-align: center;
-  span {
+
+  p {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 300;
+    color: white;
+  }
+`;
+
+const BackGroundSection = styled.div`
+  img:first-of-type {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+  }
+`;
+const SpanSection = styled.div`
+  display: grid;
+  margin-left: 470px;
+  margin-right: 470px;
+  background-color: rgb(176, 196, 222, 0.2);
+  span {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 20px;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
   }
 `;
 
