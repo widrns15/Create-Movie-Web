@@ -9,7 +9,9 @@ function Home() {
   const getMovies = async () => {
     const json = await (
       await fetch(
-        "https://yts.mx/api/v2/list_movies.json?minimum_rating=9&sort_by=year"
+        `https://yts.mx/api/v2/list_movies.json?minimum_rating=${
+          Math.random() * 10
+        }&sort_by=year`
       )
     ).json();
     setMovies(json.data.movies);
