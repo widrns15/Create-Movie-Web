@@ -1,5 +1,9 @@
 # Create-Movie-Web 🍿
 
+https://user-images.githubusercontent.com/85780501/230919847-fde3c3bb-9191-47b2-8d12-423a3bd4cc08.mp4
+
+</br>
+
 > #### ReactJS로 영화 웹 서비스 만들기
 >
 > https://widrns15.github.io/create-movie-web/
